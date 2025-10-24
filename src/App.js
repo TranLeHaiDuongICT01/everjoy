@@ -5,11 +5,13 @@ import About from "./pages/About/About";
 import Competition from "./pages/Competition/Competition";
 import NewsGallery from "./pages/NewsGallery/NewsGallery";
 import Contact from "./pages/Contact/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
