@@ -6,8 +6,20 @@ import Competition from "./pages/Competition/Competition";
 import NewsGallery from "./pages/NewsGallery/NewsGallery";
 import Contact from "./pages/Contact/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const cleanUrl = () => {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('fbclid');  // Removes fbclid from the URL
+      if (window.location.href !== url.toString()) {
+        window.history.replaceState({}, '', url.toString()); // Updates the URL in the browser
+      }
+    };
+    cleanUrl();
+  }, []);
+
   return (
     <div className="App">
       <Router>

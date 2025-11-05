@@ -1,36 +1,30 @@
 import React from "react";
 import "./BestSeller.css";
+import bestSeller1 from "../../assets/best_seller_1.png";
+import bestSeller2 from "../../assets/best_seller_2.png";
+import bestSeller3 from "../../assets/best_seller_3.png";
+import bestSeller4 from "../../assets/best_seller_4.png";
 
 const products = [
   {
     id: 1,
-    name: "Group Exercise Classes",
-    image: "https://via.placeholder.com/250x200", // replace with real image
+    name: "Galactic super beastS",
+    image: bestSeller1,
   },
   {
     id: 2,
-    name: "GALACTIC SUPER BEASTS",
-    image: "https://via.placeholder.com/250x200",
+    name: "ZODIAC RUSH",
+    image: bestSeller2,
   },
   {
     id: 3,
-    name: "Yoga",
-    image: "https://via.placeholder.com/250x200",
+    name: "XĂM HƯỜNG",
+    image: bestSeller3,
   },
   {
     id: 4,
-    name: "HEROES",
-    image: "https://via.placeholder.com/250x200",
-  },
-  {
-    id: 5,
     name: "BUNNY 100",
-    image: "https://via.placeholder.com/250x200",
-  },
-  {
-    id: 6,
-    name: "Spin",
-    image: "https://via.placeholder.com/250x200",
+    image: bestSeller4,
   },
 ];
 
