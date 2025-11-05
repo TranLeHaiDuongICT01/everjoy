@@ -8,7 +8,7 @@ import bestSeller4 from "../../assets/best_seller_4.png";
 const products = [
   {
     id: 1,
-    name: "Galactic super beastS",
+    name: "Galactic super beasts",
     image: bestSeller1,
   },
   {
