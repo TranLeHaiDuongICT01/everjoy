@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/everjoy/static/css/main.81b1aab8.css",
+    "main.css": "/everjoy/static/css/main.befb7b44.css",
     "main.js": "/everjoy/static/js/main.56b2de8d.js",
     "static/js/453.df2d602b.chunk.js": "/everjoy/static/js/453.df2d602b.chunk.js",
     "static/media/essen-backdrop.png": "/everjoy/static/media/essen-backdrop.ca0dd9d50c7a79de518f.png",
@@ -46,12 +46,12 @@
     "static/media/journey-image-3.png": "/everjoy/static/media/journey-image-3.81d30b4bb113160148ba.png",
     "static/media/road-to-essen.png": "/everjoy/static/media/road-to-essen.c8e54bc6ae7321e8fa21.png",
     "index.html": "/everjoy/index.html",
-    "main.81b1aab8.css.map": "/everjoy/static/css/main.81b1aab8.css.map",
+    "main.befb7b44.css.map": "/everjoy/static/css/main.befb7b44.css.map",
     "main.56b2de8d.js.map": "/everjoy/static/js/main.56b2de8d.js.map",
     "453.df2d602b.chunk.js.map": "/everjoy/static/js/453.df2d602b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81b1aab8.css",
+    "static/css/main.befb7b44.css",
     "static/js/main.56b2de8d.js"
   ]
 }
