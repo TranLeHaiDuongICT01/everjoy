@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0ce7d581.css",
-    "main.js": "/static/js/main.bcddcfdd.js",
+    "main.css": "/static/css/main.b858d547.css",
+    "main.js": "/static/js/main.98f87088.js",
     "static/js/453.df2d602b.chunk.js": "/static/js/453.df2d602b.chunk.js",
     "static/media/essen-backdrop.png": "/static/media/essen-backdrop.ca0dd9d50c7a79de518f.png",
     "static/media/banner-shoppe.png": "/static/media/banner-shoppe.02a1e34883569fd38022.png",
@@ -46,12 +46,12 @@
     "static/media/journey-image-3.png": "/static/media/journey-image-3.81d30b4bb113160148ba.png",
     "static/media/road-to-essen.png": "/static/media/road-to-essen.c8e54bc6ae7321e8fa21.png",
     "index.html": "/index.html",
-    "main.0ce7d581.css.map": "/static/css/main.0ce7d581.css.map",
-    "main.bcddcfdd.js.map": "/static/js/main.bcddcfdd.js.map",
+    "main.b858d547.css.map": "/static/css/main.b858d547.css.map",
+    "main.98f87088.js.map": "/static/js/main.98f87088.js.map",
     "453.df2d602b.chunk.js.map": "/static/js/453.df2d602b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ce7d581.css",
-    "static/js/main.bcddcfdd.js"
+    "static/css/main.b858d547.css",
+    "static/js/main.98f87088.js"
   ]
 }
