@@ -2,6 +2,80 @@
   position: relative;
 }
 
+/* ==== General Container ==== */
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: -140px;
+  margin-bottom: 60px;
+}
+
+.hero-container {
+  width: 100%;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-corner {
+  left: 0;
+  height: 100%;
+  width: 3rem;
+  background-color: white;
+}
+
+.right-corner {
+  right: 0;
+  height: 100%;
+  width: 3rem;
+  background-color: white;
+}
+
+/* ==== Hero Content ==== */
+.hero-content {
+  text-align: left;
+  background-color: #d9d9d9;
+  color: #fff;
+  width: calc(100% - 6rem);
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+.hero-content h1 {
+  color: black;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.2;
+  padding: 0 40px;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.highlight-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  justify-self: center;
+}
+
+.highlight-games img {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.highlight-game-item-container {
+  width: calc(25% - 38px);
+}
+
+.highlight-games img:hover {
+  transform: scale(1.1);
+}
+
 .essen-backdrop-container {
   position: relative;
 }
@@ -11,10 +85,45 @@
   margin-top: 60px;
 }
 
-.highlight-games img {
-  transition: transform 0.3s ease;
+/* ==== Responsive Styles ==== */
+@media (max-width: 961px) {
+  .left-corner {
+    width: 1.5rem;
+  }
+
+  .right-corner {
+    width: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  .highlight-game-item-container {
+    width: calc(50% - 50px);
+  }
+
+  .highlight-game-item-container img {
+    height: 50vw;
+  }
+
+  .highlight-games {
+    max-width: 600px;
+  }
 }
 
-.highlight-games img:hover {
-  transform: scale(1.1);
+@media (max-width: 480px) {
+  .highlight-game-item-container {
+    width: 100%;
+  }
+
+  .highlight-game-item-container img {
+    height: auto;
+  }
+
+  .highlight-games {
+    max-width: 300px;
+  }
 }

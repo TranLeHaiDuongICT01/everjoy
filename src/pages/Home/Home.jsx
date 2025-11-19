@@ -20,16 +20,16 @@ const Home = () => {
           <section className="hero-content">
             <h1>Highlight Games</h1>
             <div className="highlight-games">
-              <div className="highlight-game-img1">
+              <div className="highlight-game-item-container highlight-game-img1">
                 <img src={ruleBook} alt="rule book" />
               </div>
-              <div className="highlight-game-img2">
+              <div className="highlight-game-item-container highlight-game-img2">
                 <img src={xamHuong} alt="xam huong" />
               </div>
-              <div className="highlight-game-img3">
+              <div className="highlight-game-item-container highlight-game-img3">
                 <img src={bunny} alt="bunny" />
               </div>
-              <div className="highlight-game-img4">
+              <div className="highlight-game-item-container highlight-game-img4">
                 <img src={roadZodiac} alt="road zodiac" />
               </div>
             </div>
