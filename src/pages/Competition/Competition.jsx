@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Competition.css";
 import Header from "../../components/Header/Header";
 import competitionBanner from "../../assets/competition-banner.png";
@@ -20,14 +20,10 @@ import netQue from "../../assets/net_que.png";
 import thoaiPhu from "../../assets/thoai_phu.png";
 import trumNongSan from "../../assets/trum_nong_san.png";
 import vanNguyenCam from "../../assets/van_nguyen_cam.png";
-import Glide from "@glidejs/glide";
-import "@glidejs/glide/dist/css/glide.core.min.css";
-import "@glidejs/glide/dist/css/glide.theme.min.css";
-import { Autoplay } from "@glidejs/glide/dist/glide.modular.esm";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Competition = () => {
-  const glideRef = useRef(null);
-
   const finalistData = [
     { title: "julyRuleBook", img: julyRuleBook },
     { title: "amBinh", img: amBinh },
@@ -44,32 +40,26 @@ const Competition = () => {
     { title: "vanNguyenCam", img: vanNguyenCam },
   ];
 
-  useEffect(() => {
-    const glide = new Glide(glideRef.current, {
-      type: "carousel",
-      perView: 3,
-      focusAt: "center",
-      gap: 20,
-      autoplay: 4000,
-      hoverpause: true,
-      breakpoints: {
-        768: {
-          perView: 2,
-          gap: 15,
-        },
-        480: {
-          perView: 1,
-          gap: 10,
-        },
-      },
-    });
-
-    glide.mount({ Autoplay });
-
-    return () => {
-      glide.destroy();
-    };
-  }, []);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 40,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 30,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+      partialVisibilityGutter: 20,
+    },
+  };
 
   return (
     <div className="competition-page">
@@ -111,26 +101,41 @@ const Competition = () => {
           </p>
         </div>
         <div className="finalists-carousel">
-          <div className="glide" ref={glideRef}>
-            <div className="glide__track" data-glide-el="track">
-              <ul className="glide__slides">
-                {finalistData.map((finalist, index) => (
-                  <li className="glide__slide" key={index}>
-                    <img src={finalist.img} alt={finalist.title} />
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="glide__bullets" data-glide-el="controls[nav]">
-              {finalistData.map((_, index) => (
-                <button
-                  className="glide__bullet"
-                  data-glide-dir={`=${index}`}
-                  key={index}
-                ></button>
-              ))}
-            </div>
-          </div>
+          <Carousel
+            responsive={responsive}
+            infinite={true}
+            autoPlay={true}
+            autoPlaySpeed={4000}
+            keyBoardControl={false}
+            customTransition="transform 1000ms ease-in-out"
+            transitionDuration={1000}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["mobile"]}
+            itemClass="carousel-item"
+            centerMode={true}
+            showDots={false}
+            dotListClass="custom-dot-list-style"
+            swipeable={true}
+            draggable={true}
+            pauseOnHover={true}
+            focusOnSelect={false}
+            minimumTouchDrag={10}
+            shouldResetAutoplay={true}
+            slidesToSlide={1}
+            additionalTransfrom={0}
+          >
+            {finalistData.map((finalist, index) => (
+              <div key={index} className="carousel-slide">
+                <img
+                  src={finalist.img}
+                  alt={finalist.title}
+                  loading="lazy"
+                  width="416"
+                  height="400"
+                />
+              </div>
+            ))}
+          </Carousel>
         </div>
         <h1 className="thank-you-partners">
           ROAD TO ESSEN 2025 EXTENDS ITS SINCERE GRATITUDE TO OUR PARTNERS &

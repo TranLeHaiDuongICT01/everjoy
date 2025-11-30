@@ -76,76 +76,63 @@
 }
 
 .finalists-carousel {
-  max-width: 1000px;
-  margin: 48px auto 0;
-  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: white;
 }
 
-.glide {
-  perspective: 1500px;
+.carousel-container {
+  position: relative;
   padding: 40px 0;
 }
 
-.glide__track {
-  overflow: visible;
-}
-
-.glide__slides {
-  overflow: visible;
-
-  transform-style: preserve-3d;
-}
-
-.glide__slide {
-  transition: all 0.9s ease;
-
-  transform-style: preserve-3d;
+.carousel-slide {
   padding: 0 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-.glide__slide--active {
-  opacity: 1;
-  z-index: 2;
-}
-
-.glide__slide img {
+.carousel-slide img {
   width: 100%;
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
+  background-color: #f0f0f0;
+  transition: all 0.5s ease;
+  will-change: transform;
+  backface-visibility: hidden;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  pointer-events: none;
 }
 
-.glide__bullets {
+/* Center mode styling */
+.react-multi-carousel-item--active .carousel-slide img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.react-multi-carousel-item:not(.react-multi-carousel-item--active)
+  .carousel-slide
+  img {
+  transform: scale(0.85);
+  opacity: 0.5;
+}
+
+/* Custom dots styling */
+.custom-dot-list-style {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 50px;
-  padding: 10px 0;
-  left: unset !important;
-  transform: unset !important;
-  position: relative !important;
-}
-
-.glide__bullet {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  background-color: #ccc !important;
-  border: none !important;
-}
-
-.glide__bullet:focus,
-.glide__bullet:hover {
-  outline: none !important;
-  border: none !important;
-}
-
-.glide__bullet--active {
-  background-color: #333 !important;
-  transform: scale(1.3);
+  gap: 10px;
+  margin-top: 30px;
+  padding: 20px 0;
+  background-color: white;
 }
 
 .thank-you-partners {
@@ -174,11 +161,7 @@
     font-size: 32px;
   }
 
-  .finalists-carousel {
-    padding: 0 10px;
-  }
-
-  .glide__slide img {
+  .carousel-slide img {
     height: 300px;
   }
 }
@@ -193,13 +176,17 @@
     font-size: 30px;
   }
 
-  .finalists-carousel {
-    padding: 0 5px;
+  .carousel-slide img {
+    height: 250px;
   }
 
-  .glide__slide img {
-    height: 250px;
-    border-radius: 6px;
+  .custom-dot-list-style {
+    gap: 6px;
+  }
+
+  .react-multi-carousel-dot button {
+    width: 10px;
+    height: 10px;
   }
 
   .thank-you-partners {

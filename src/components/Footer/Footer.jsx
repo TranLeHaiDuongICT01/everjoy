@@ -28,16 +28,36 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-social">
-        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Facebook"
+        >
           <FaFacebookF />
         </a>
-        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Twitter"
+        >
           <FaTwitter />
         </a>
-        <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="YouTube"
+        >
           <FaYoutube />
         </a>
-        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+        >
           <FaInstagram />
         </a>
       </div>

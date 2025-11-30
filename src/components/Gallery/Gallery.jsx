@@ -25,6 +25,25 @@ import gallery22 from "../../assets/galleries/gallery22.png";
 import gallery23 from "../../assets/galleries/gallery23.png";
 import gallery24 from "../../assets/galleries/gallery24.png";
 
+import gallery25 from "../../assets/galleries/gallery25.png";
+import gallery26 from "../../assets/galleries/gallery26.png";
+import gallery27 from "../../assets/galleries/gallery27.png";
+import gallery28 from "../../assets/galleries/gallery28.png";
+import gallery29 from "../../assets/galleries/gallery29.png";
+import gallery30 from "../../assets/galleries/gallery30.png";
+import gallery31 from "../../assets/galleries/gallery31.png";
+import gallery32 from "../../assets/galleries/gallery32.png";
+import gallery33 from "../../assets/galleries/gallery33.png";
+import gallery34 from "../../assets/galleries/gallery34.png";
+import gallery35 from "../../assets/galleries/gallery35.png";
+import gallery36 from "../../assets/galleries/gallery36.png";
+import gallery37 from "../../assets/galleries/gallery37.png";
+import gallery38 from "../../assets/galleries/gallery38.png";
+import gallery39 from "../../assets/galleries/gallery39.png";
+import gallery40 from "../../assets/galleries/gallery40.png";
+import gallery41 from "../../assets/galleries/gallery41.png";
+import gallery42 from "../../assets/galleries/gallery42.png";
+
 const Gallery = () => {
   // Mock image data
   const images = [
@@ -52,6 +71,24 @@ const Gallery = () => {
     { id: 22, src: gallery22 },
     { id: 23, src: gallery23 },
     { id: 24, src: gallery24 },
+    { id: 25, src: gallery25 },
+    { id: 26, src: gallery26 },
+    { id: 27, src: gallery27 },
+    { id: 28, src: gallery28 },
+    { id: 29, src: gallery29 },
+    { id: 30, src: gallery30 },
+    { id: 31, src: gallery31 },
+    { id: 32, src: gallery32 },
+    { id: 33, src: gallery33 },
+    { id: 34, src: gallery34 },
+    { id: 35, src: gallery35 },
+    { id: 36, src: gallery36 },
+    { id: 37, src: gallery37 },
+    { id: 38, src: gallery38 },
+    { id: 39, src: gallery39 },
+    { id: 40, src: gallery40 },
+    { id: 41, src: gallery41 },
+    { id: 42, src: gallery42 },
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
