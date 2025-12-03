@@ -31,7 +31,7 @@
   width: 100%;
   aspect-ratio: 3 / 3;
   border-radius: 10px;
-  background-color: #b0b0b0;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -81,4 +81,15 @@
 .product-description p {
   font-size: 12px;
   text-align: left;
+}
+
+.product-description h3,
+.product-description h4,
+.product-description p {
+  margin: 10px 0;
+}
+
+.product-description h4 {
+  font-size: 15px;
+  font-style: italic;
 }

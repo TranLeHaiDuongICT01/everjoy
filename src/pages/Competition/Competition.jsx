@@ -42,13 +42,13 @@ const Competition = () => {
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 3000, min: 1500 },
       items: 3,
       slidesToSlide: 1,
       partialVisibilityGutter: 40,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1500, min: 464 },
       items: 2,
       slidesToSlide: 1,
       partialVisibilityGutter: 30,
@@ -93,22 +93,20 @@ const Competition = () => {
         <div className="finalists-road">
           <h1>TOP 20 FINALISTS ROAD TO ESSEN 2025</h1>
           <p>
-            Health Clubs with Simplicity. Value. And Your Good health in mind.
-            These qualities form the bedrock of Fitness Evolution, the next
-            generation of health and fitness centers. With our low-cost, no
-            long-term-contract memberships and high-quality equipment, you can
-            realize your fitness goals in a comfortable, safe environment.
+            Explore the Top 20 standout board games selected to compete for a
+            spot at Spiel Essen 2025. A showcase of innovation, cultural depth
+            and strategic brilliance defining the next generation of Vietnamese
+            board games.
           </p>
         </div>
         <div className="finalists-carousel">
           <Carousel
             responsive={responsive}
             infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={4000}
+            // autoPlay={true}
+            // autoPlaySpeed={4000}
             keyBoardControl={false}
             customTransition="transform 1000ms ease-in-out"
-            transitionDuration={1000}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["mobile"]}
             itemClass="carousel-item"
@@ -126,13 +124,7 @@ const Competition = () => {
           >
             {finalistData.map((finalist, index) => (
               <div key={index} className="carousel-slide">
-                <img
-                  src={finalist.img}
-                  alt={finalist.title}
-                  loading="lazy"
-                  width="416"
-                  height="400"
-                />
+                <img src={finalist.img} alt={finalist.title} loading="lazy" />
               </div>
             ))}
           </Carousel>

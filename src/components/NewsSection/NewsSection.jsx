@@ -1,6 +1,7 @@
 import React from "react";
 import "./NewsSection.css";
 import PartnersCarousel from "../PartnersCarousel/PartnersCarousel";
+import competitionBanner from "../../assets/competition-banner.png";
 
 const NewsSection = () => {
   const newsItems = [
@@ -36,13 +37,20 @@ const NewsSection = () => {
 
       <div className="news-container">
         {/* Main news item */}
-        <div className="news-main">
-          <div className="news-main-image"></div>
-          <p className="news-main-text">
+        <div
+          className="news-main"
+          style={{ backgroundImage: `url(${competitionBanner})` }}
+        >
+          <a
+            href="https://boardgamewire.com/index.php/2025/09/24/theres-no-shortage-of-creativity-in-vietnam-what-we-lack-are-bridges-vietnams-blossoming-board-game-design-scene-goes-global-via-first-road-to-essen-competition/"
+            className="news-main-text"
+            target="_blank"
+            rel="noreferrer"
+          >
             “There’s no shortage of creativity in Vietnam. What we lack are
             bridges”: Vietnam’s blossoming board game design scene goes global
             via first Road to Essen competition.
-          </p>
+          </a>
         </div>
 
         {/* News list */}

@@ -8,8 +8,12 @@ const products = [
     id: 1,
     name1: [
       {
-        title: "~70.000 Copies Sold",
+        title: "Galactic super beasts",
         isTitle: true,
+      },
+      {
+        title: "~70.000 Copies Sold",
+        isSubtitle: true,
       },
       {
         title: "- Top 1 bestseller on largest Ecom platform in 2022",
@@ -23,8 +27,24 @@ const products = [
   },
   {
     id: 2,
-    name: "ZODIAC RUSH",
     image: bestSeller2,
+    name1: [
+      {
+        title: "ZODIAC RUSH",
+        isTitle: true,
+      },
+      {
+        title: "~70.000 Copies Sold",
+        isSubtitle: true,
+      },
+      {
+        title: "- Top 1 bestseller on largest Ecom platform in 2022",
+      },
+      {
+        title:
+          "- Top 1 bestseller in the largest bookstore franchise in Vietnam",
+      },
+    ],
   },
 ];
 
@@ -37,13 +57,16 @@ const BestSeller = () => {
         {products.map((item) => (
           <div key={item.id} className="best-seller-card">
             <div className="image-wrapper">
-              <img src={item.image} alt={item.name} />
+              <img src={item.image} alt={item.name1[0].title} />
             </div>
             {item.name1 ? (
               <div className="product-description">
                 {item.name1.map((line, index) => {
                   if (line.isTitle) {
                     return <h3 key={index}>{line.title}</h3>;
+                  }
+                  if (line.isSubtitle) {
+                    return <h4 key={index}>{line.title}</h4>;
                   }
                   return <p key={index}>{line.title}</p>;
                 })}
