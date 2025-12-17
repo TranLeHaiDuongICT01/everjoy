@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d8ebad0.css",
-    "main.js": "/static/js/main.917d715b.js",
+    "main.css": "/static/css/main.f6198493.css",
+    "main.js": "/static/js/main.01bbbde8.js",
     "static/js/453.df2d602b.chunk.js": "/static/js/453.df2d602b.chunk.js",
     "static/media/au_lac.png": "/static/media/au_lac.a1b56f9bd965de22fab2.png",
     "static/media/am_binh.png": "/static/media/am_binh.f506106926671933be2d.png",
@@ -10,6 +10,7 @@
     "static/media/essen-backdrop.png": "/static/media/essen-backdrop.ca0dd9d50c7a79de518f.png",
     "static/media/thoai_phu.png": "/static/media/thoai_phu.a64070ff3d62a8726290.png",
     "static/media/trum_nong_san.png": "/static/media/trum_nong_san.34d13985c73d28cfc92c.png",
+    "static/media/bunny_1.png": "/static/media/bunny_1.6e643f17255c10e7ba29.png",
     "static/media/net_que.png": "/static/media/net_que.8d881b0c4909afa0c053.png",
     "static/media/van_nguyen_cam.png": "/static/media/van_nguyen_cam.9631a29732f5ef5ff1f0.png",
     "static/media/giap.png": "/static/media/giap.cfee19beb08d0a201bf1.png",
@@ -39,6 +40,7 @@
     "static/media/gallery24.png": "/static/media/gallery24.50f839525306500d0691.png",
     "static/media/gallery39.png": "/static/media/gallery39.4a94ff517112291fc132.png",
     "static/media/gallery25.png": "/static/media/gallery25.f9cca09b3dd12487ed88.png",
+    "static/media/xam_huong.png": "/static/media/xam_huong.c8a533e859a039bdffe0.png",
     "static/media/gallery29.png": "/static/media/gallery29.693cb0d99d2b34730732.png",
     "static/media/gallery10.png": "/static/media/gallery10.5fb8ad22bf4ef69e1ceb.png",
     "static/media/gallery15.png": "/static/media/gallery15.1338e0dfbddee4b7cca1.png",
@@ -52,6 +54,7 @@
     "static/media/gallery18.png": "/static/media/gallery18.87f1d43572ee831d9d65.png",
     "static/media/gallery1.png": "/static/media/gallery1.8c28abe312255a6a0eb8.png",
     "static/media/gallery2.png": "/static/media/gallery2.4c4289e7fe9a69dab0f5.png",
+    "static/media/xam_huong_1.jpg": "/static/media/xam_huong_1.af7f7bcc29bf1683e9dd.jpg",
     "static/media/gallery19.png": "/static/media/gallery19.4ab4203d0bb7548dc3d8.png",
     "static/media/gallery3.png": "/static/media/gallery3.f48547f5df4d57047a5d.png",
     "static/media/gallery8.png": "/static/media/gallery8.6b7763c74ddd877a4c70.png",
@@ -61,29 +64,26 @@
     "static/media/gallery11.png": "/static/media/gallery11.45906cf294dcf7833d01.png",
     "static/media/gallery12.png": "/static/media/gallery12.19544382b984083988c2.png",
     "static/media/gallery20.png": "/static/media/gallery20.14216af7407aa37e763b.png",
+    "static/media/bunny.png": "/static/media/bunny.00bd1186d0c8f4eef85f.png",
     "static/media/gallery21.png": "/static/media/gallery21.a83f6a87ce78937e3c0b.png",
     "static/media/highlight-section.png": "/static/media/highlight-section.36fd0bfea8b88b297b22.png",
     "static/media/gallery17.png": "/static/media/gallery17.aa92f4c82cac7434f494.png",
     "static/media/july_rule_book.png": "/static/media/july_rule_book.02538d56f91248ccfdff.png",
     "static/media/gallery14.png": "/static/media/gallery14.52a39beed3d5685ac9ce.png",
-    "static/media/road_zodiac.png": "/static/media/road_zodiac.42ece37d236264ae9b1a.png",
-    "static/media/rule_book.png": "/static/media/rule_book.b7a9e657d5584e0603cc.png",
     "static/media/journey-image-4.png": "/static/media/journey-image-4.addabd1483fc27323342.png",
     "static/media/journey-image-2.png": "/static/media/journey-image-2.68ac98364e9201d9eb20.png",
-    "static/media/xam_huong.png": "/static/media/xam_huong.fa79bb40a14aa3a732fe.png",
-    "static/media/bunny.png": "/static/media/bunny.65c9d01303bcb150774f.png",
     "static/media/journey-image-1.png": "/static/media/journey-image-1.e1b59cd9eea938376356.png",
     "static/media/journey-image-3.png": "/static/media/journey-image-3.099cb772ebcaf506c635.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.2d8ebad0.css.map": "/static/css/main.2d8ebad0.css.map",
-    "main.917d715b.js.map": "/static/js/main.917d715b.js.map",
+    "main.f6198493.css.map": "/static/css/main.f6198493.css.map",
+    "main.01bbbde8.js.map": "/static/js/main.01bbbde8.js.map",
     "453.df2d602b.chunk.js.map": "/static/js/453.df2d602b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d8ebad0.css",
-    "static/js/main.917d715b.js"
+    "static/css/main.f6198493.css",
+    "static/js/main.01bbbde8.js"
   ]
 }
